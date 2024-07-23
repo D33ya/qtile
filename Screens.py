@@ -6,13 +6,13 @@ from widgets import volume, bluetooth, status, power, clock, sep, group, space
 
 my_widgets = [
     sep,
-    volume,
-    bluetooth,
-    power,
     status,
     space,
     group,
     space,
+    volume,
+    bluetooth,
+    power,
     clock,
     sep
 ]

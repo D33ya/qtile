@@ -40,7 +40,7 @@ def set_label(rule, box):
 
 
 volume = widget.Volume(
-    background=theme['color5'],
+    background=theme['background'],
     emoji=True,
     emoji_list=['', '', '', ''],
     scroll=True,
@@ -48,29 +48,30 @@ volume = widget.Volume(
 )
 
 bluetooth = widget.Bluetooth(
-    background=theme['color5'],
+    background=theme['background'],
     default_text='',
 )
 
 status = widget.StatusNotifier(
-    background=theme['color5'],
+    background=theme['background'],
 )
 
 power = widget.UPowerWidget(
     battery_name='BAT1',
     # padding_x=4,
-    background=theme['color5'],
+    background=theme['background'],
 )
 
-clock = widget.Clock(background=theme['color4'])
+clock = widget.Clock(background=theme['background'])
 
 space = widget.Spacer(
+    background=theme['background'],
 
 )
 
 sep = widget.Sep(
-    background=theme['color1'],
-    foreground=theme['color1'],
+    background=theme['background'],
+    foreground=theme['background'],
 )
 
 group = widget.GroupBox2(
@@ -84,5 +85,5 @@ group = widget.GroupBox2(
             screen=ScreenRule.OTHER),
         GroupBoxRule(text_colour=theme["color2"]).when()
     ],
-    background=theme['color1'],
+    background=theme['background'],
 )
